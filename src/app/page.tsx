@@ -10,20 +10,22 @@ export default function Home() {
     <div className="bg-gray-300 min-h-screen flex flex-col justify-center">
       <div id="home" className='m-8'>
         {/* Header */}
-        <header className="bg-blue-500 text-white py-4 rounded-t-3xl">
-          <div className="container mx-auto flex flex-col items-center justify-center">
-            <h1 className="text-3xl font-bold">Dikshyanta's Portfolio</h1>
-            <nav className="mt-4">
-              <ul className="flex flex-col md:flex-row md:space-x-16">
-                <li><a href="#home" className="text-white hover:underline block">Home</a></li>
-                <li><a href="#blog" className="text-white hover:underline block">Blog</a></li>
-                <li><a href="#myprojects" className="text-white hover:underline block">Projects</a></li>
-                <li><a href="#skills" className="text-white hover:underline block">Skills</a></li>
-                <li><a href="#about" className="text-white hover:underline block">About</a></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
+        <header className="text-white py-4 rounded-t-3xl">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
+        <nav className="mt-4 md:mt-0 md:order-1">
+            <ul className="flex flex-col md:flex-row md:space-x-16">
+              <li><a href="#home" className="text-white hover:underline block hover:text-blue-400">Home</a></li>
+              <li><a href="#blog" className="text-white hover:underline block hover:text-blue-400">Blog</a></li>
+              <li><a href="#myprojects" className="text-white hover:underline block hover:text-blue-400">Projects</a></li>
+              <li><a href="#skills" className="text-white hover:underline block hover:text-blue-400">Skills</a></li>
+              <li><a href="#about" className="text-white hover:underline block hover:text-blue-400">About</a></li>
+            </ul>
+          </nav>
+          <h1 className="text-3xl font-bold md:order-2 md:ml-aut md:mr-16">Dikshyanta's Portfolio</h1>
+        </div>
+      </header>
+
+
 
         {/* Image and Introduction */}
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center py-8">
