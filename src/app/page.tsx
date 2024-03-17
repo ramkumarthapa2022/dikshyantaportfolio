@@ -119,35 +119,46 @@ useEffect(()=>{
               <li className="flex flex-row"><DiResponsive className="text-5xl"/><p className="text-3xl pl-2 pt-2"> Responsive Web Design</p></li>
               <li className="flex flex-row"><FaGit className="text-5xl"/><p className="text-3xl pt-2 pl-2">Version Control</p></li>
             </ul>
-
-
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,64L20,85.3C40,107,80,149,120,170.7C160,192,200,192,240,202.7C280,213,320,235,360,256C400,277,440,299,480,282.7C520,267,560,213,600,186.7C640,160,680,160,720,181.3C760,203,800,245,840,229.3C880,213,920,139,960,106.7C1000,75,1040,85,1080,85.3C1120,85,1160,75,1200,112C1240,149,1280,235,1320,240C1360,245,1400,171,1420,133.3L1440,96L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
           </section>
-          <section id="myprojects" className="my-8 flex flex-col items-center">
-          <h2 className="text-3xl font-bold mb-4">My Projects</h2>
+          <section id="myprojects" className="my-20 flex flex-col items-center min-h-[70vh]">
+          <h2 className="text-3xl font-bold mb-16">Some of my Recent Projects</h2>
           <div className="flex flex-wrap justify-center">
-            <img src="/1.jpg" alt="Project 1" className="w-1/2 sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
-            <img src="/1.jpg" alt="Project 2" className="w-1/2 sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
-            <img src="/1.jpg" alt="Project 3" className="w-1/2 sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
-            <img src="/1.jpg" alt="Project 4" className="w-1/2 sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
+          <div className="flex">
+          <div>
+              <img src="/works.jpg" alt="Project 1" className="w-1/2 min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
+          <p  className="flex max-w-[15vw] text-left pl-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo illum, velit soluta facilis eos est distinctio saepe. Repellendus error quasi,
+             ad nulla aut minima libero nihil sunt nobis quaerat esse.</p>
+             </div>
+          <div> 
+              <img src="/works.jpg" alt="Project 2" className="w-1/2 min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
+              <p className="flex max-w-[15vw] text-left pl-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur explicabo pariatur repellendus
+               ipsam velit iste architecto, illo eos. Dicta, esse! Reprehenderit animi, corporis fugit quidem cum labore suscipit ab voluptas.</p>
+          </div>
+          <div>
+            <img src="/works.jpg" alt="Project 3" className="w-1/2 min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
+        <p className="flex max-w-[15vw] text-left pl-4">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolore
+         mollitia aliquid molestiae eos hic, aspernatur nam nihil porro sint! Tempora ab reiciendis et dolor commodi magni distinctio blanditiis ullam.</p>
+          </div>
+          </div>
           </div>
         </section>
-<section id="contact" className="my-8 flex flex-col bg-[#f8f7f1] md:flex-row items-center justify-between gap-16 min-h-screen">
-  <div className="mr-8 max-w-[40vw] ml-16"> {/* Adjusted width here */}
-    <h2 className="border text-purple-700 text-3xl bg-purple-200 max-w-36 px-3 rounded-xl mx-2">Contact</h2>
-    <p className="text-5xl">Got a problem to solve?</p>
-    <p className="text-xl">Get your suit ready and tell me <span className=" text-gray-400">your ideas to develop your dream website</span></p>
-  </div>
-  <div className="flex flex-col space-y-4 mr-16 min-w-[40vw] ">
-    <input type="text" placeholder="Your Name" className="px-4 py-2 border border-gray-300 rounded-md " />
-    <input type="email" placeholder="Your Email" className="px-4 py-2 border border-gray-300 rounded-md " />
-    <textarea placeholder="Your Message" className="px-4 py-2 border border-gray-300 rounded-md"></textarea>
-  <div className="flex flex-row items-center justify-between">  
-  <button className="px-4 py-2 flex "><CiMail className="mr-1 pt-1 text-2xl"/> mailmewith@gmail.com</button>
-  <button className="bg-white text-black px-4 py-2 rounded-md">Send Message</button>
-    </div>
-  </div>
-</section>
+      <section id="contact" className="my-8 flex flex-col bg-[#f8f7f1] md:flex-row items-center justify-between gap-16 min-h-screen">
+        <div className="mr-8 max-w-[40vw] ml-16"> {/* Adjusted width here */}
+          <h2 className="border text-purple-700 text-3xl bg-purple-200 max-w-36 px-3 rounded-xl mx-2">Contact</h2>
+          <p className="text-5xl">Got a problem to solve?</p>
+          <p className="text-xl">Get your suit ready and tell me <span className=" text-gray-400">your ideas to develop your dream website</span></p>
+        </div>
+        <div className="flex flex-col space-y-4 mr-16 min-w-[40vw] ">
+          <input type="text" placeholder="Your Name" className="px-4 py-2 border border-gray-300 rounded-md " />
+          <input type="email" placeholder="Your Email" className="px-4 py-2 border border-gray-300 rounded-md " />
+          <textarea placeholder="Your Message" className="px-4 py-2 border border-gray-300 rounded-md"></textarea>
+        <div className="flex flex-row items-center justify-between">  
+        <button className="px-4 py-2 flex "><CiMail className="mr-1 pt-1 text-2xl"/> mailmewith@gmail.com</button>
+        <button className="bg-white text-black px-4 py-2 rounded-md">Send Message</button>
+          </div>
+        </div>
+      </section>
 
 
 
