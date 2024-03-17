@@ -2,11 +2,11 @@
 import React,{ useEffect, useState } from "react";
 import { CiEdit, CiMail } from "react-icons/ci";
 import {FaFacebook, FaGit, FaHtml5, FaInstagram, FaLinkedin, FaNode, FaTwitter} from "react-icons/fa"
-import CurvedButton from "@/components/CurvedButton"
 import { TbBrandJavascript } from "react-icons/tb";
 import { RiReactjsLine } from "react-icons/ri";
 import { SiExpress, SiTailwindcss } from "react-icons/si";
 import { DiResponsive } from "react-icons/di";
+import { MdExpandMore } from "react-icons/md";
 export default function Home() {
   const handleSendMessage = () => {
     window.open('https://www.facebook.com/messages/t/100065000725712', '_blank','noopener,noreferrer');
@@ -36,14 +36,16 @@ useEffect(()=>{
       <li>
         <a href="#home" className="text-green-800 hover:underline  hover:text-red-200">( Home )</a>
       </li>
+      
       <li>
-        <a href="#blog" className="text-black hover:underline hover:text-red-200">Blog</a>
+        <a href="#skills" className="text-black hover:underline hover:text-red-200">Skills</a>
       </li>
       <li>
         <a href="#myprojects" className="text-black hover:underline hover:text-red-200">Projects</a>
       </li>
+      
       <li>
-        <a href="#skills" className="text-black hover:underline hover:text-red-200">Skills</a>
+        <a href="#blogs" className="text-black hover:underline hover:text-red-200">Blog</a>
       </li>
       <li>
         <a href="#about" className="text-black hover:underline hover:text-red-200">About</a>
@@ -128,19 +130,49 @@ useEffect(()=>{
           <div className="hover:scale-110">
               <img src="/works.jpg" alt="Project 1" className="w-1/2 min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
           <p  className="flex max-w-[15vw] text-left pl-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo illum, velit soluta facilis eos est distinctio saepe. Repellendus error quasi,
-             ad nulla aut minima libero nihil sunt nobis quaerat esse.</p>
+             ad nulla aut minima libero nihil sunt nobis quaerat esse.<button>Read more</button></p>
              </div>
           <div className="hover:scale-110"> 
               <img src="/works.jpg" alt="Project 2" className="w-1/2 min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
               <p className="flex max-w-[15vw] text-left pl-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur explicabo pariatur repellendus
-               ipsam velit iste architecto, illo eos. Dicta, esse! Reprehenderit animi, corporis fugit quidem cum labore suscipit ab voluptas.</p>
+               ipsam velit iste architecto, illo eos. Dicta, esse! Reprehenderit animi, corporis fugit quidem cum labore suscipit ab voluptas.<button>Read more</button></p>
           </div>
           <div className="hover:scale-110">
             <img src="/works.jpg" alt="Project 3" className="w-1/2 min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
         <p className="flex max-w-[15vw] text-left pl-4">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolore
-         mollitia aliquid molestiae eos hic, aspernatur nam nihil porro sint! Tempora ab reiciendis et dolor commodi magni distinctio blanditiis ullam.</p>
+         mollitia aliquid molestiae eos hic, aspernatur nam nihil porro sint! Tempora ab reiciendis et dolor commodi magni distinctio blanditiis ullam.<button>Read more</button></p>
           </div>
           </div>
+          <button className="mt-10 text-3xl flex flex-col items-center">
+            Browse for more
+            <MdExpandMore className=""/>
+          </button>
+          </div>
+        </section>
+        <section id="blogs" className="my-20 flex flex-col items-center min-h-[70vh]">
+          <h2 className="text-3xl font-bold mb-16">Blogs</h2>
+          <div className="flex flex-wrap justify-center">
+          <div className="flex">
+          <div className="hover:scale-110">
+              <img src="/works.jpg" alt="Project 1" className="w-1/2 min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
+          <p  className="flex max-w-[15vw] text-left pl-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo illum, velit soluta facilis eos est distinctio saepe. Repellendus error quasi,
+             ad nulla aut minima libero nihil sunt nobis quaerat esse.<button>Read more</button></p>
+             </div>
+          <div className="hover:scale-110"> 
+              <img src="/works.jpg" alt="Project 2" className="w-1/2 min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
+              <p className="flex max-w-[15vw] text-left pl-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur explicabo pariatur repellendus
+               ipsam velit iste architecto, illo eos. Dicta, esse! Reprehenderit animi, corporis fugit quidem cum labore suscipit ab voluptas.<button>Read more</button></p>
+          </div>
+          <div className="hover:scale-110">
+            <img src="/works.jpg" alt="Project 3" className="w-1/2 min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
+        <p className="flex max-w-[15vw] text-left pl-4">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolore
+         mollitia aliquid molestiae eos hic, aspernatur nam nihil porro sint! Tempora ab reiciendis et dolor commodi magni distinctio blanditiis ullam.<button>Read more</button></p>
+          </div>
+          </div>
+          <button className="mt-10 text-3xl flex flex-col items-center">
+            Browse for more
+            <MdExpandMore className=""/>
+          </button>
           </div>
         </section>
       <section id="contact" className="my-8 flex flex-col bg-[#f8f7f1] md:flex-row items-center justify-between gap-16 min-h-screen">
