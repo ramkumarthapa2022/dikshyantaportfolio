@@ -125,17 +125,17 @@ useEffect(()=>{
           <h2 className="text-3xl font-bold mb-16">Some of my Recent Projects</h2>
           <div className="flex flex-wrap justify-center">
           <div className="flex">
-          <div>
+          <div className="hover:scale-110">
               <img src="/works.jpg" alt="Project 1" className="w-1/2 min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
           <p  className="flex max-w-[15vw] text-left pl-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo illum, velit soluta facilis eos est distinctio saepe. Repellendus error quasi,
              ad nulla aut minima libero nihil sunt nobis quaerat esse.</p>
              </div>
-          <div> 
+          <div className="hover:scale-110"> 
               <img src="/works.jpg" alt="Project 2" className="w-1/2 min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
               <p className="flex max-w-[15vw] text-left pl-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur explicabo pariatur repellendus
                ipsam velit iste architecto, illo eos. Dicta, esse! Reprehenderit animi, corporis fugit quidem cum labore suscipit ab voluptas.</p>
           </div>
-          <div>
+          <div className="hover:scale-110">
             <img src="/works.jpg" alt="Project 3" className="w-1/2 min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
         <p className="flex max-w-[15vw] text-left pl-4">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolore
          mollitia aliquid molestiae eos hic, aspernatur nam nihil porro sint! Tempora ab reiciendis et dolor commodi magni distinctio blanditiis ullam.</p>
@@ -163,7 +163,7 @@ useEffect(()=>{
 
 
         </main>
-        <footer className="bg-blue-500 py-4 text-center rounded-b-3xl">
+        <footer className=" bg-gray-600 py-4 text-center rounded-b-3xl text-white">
           <p>&copy; {new Date().getFullYear()} Dikshyanta. All rights reserved.</p>
         </footer>
       </div>
