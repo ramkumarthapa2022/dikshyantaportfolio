@@ -80,7 +80,7 @@ useEffect(()=>{
               
                 <ul className={`sm:flex flex-col md:flex-row md:space-x-16 ${showNav || !issmscreen ? '' : 'hidden'}`}>
                     <li>
-                        <a href="#home" className="text-green-800 hover:underline  hover:text-red-200">( Home )</a>
+                        <a href="#home" className="text-green-800 hover:underline  hover:text-red-200">Home</a>
                     </li>
                     <li>
                         <a href="#skills" className="text-black hover:underline hover:text-red-200">Skills</a>
@@ -135,7 +135,7 @@ useEffect(()=>{
                 <div className="flex flex-col md:flex-row justify-center items-center">
                   
                   <div className="pt-12 ">
-                    <img src="/about.jpg" alt="About" className="max-w-[40vw] min-h-[30vh] sm:min-h-[70vh]" />
+                    <img src="/about.jpg" alt="About" className="ml-8 rounded-full " />
                   </div>
                   
                   <div className="min-w-[50vw] px-8 pt-12 mr-4">
@@ -172,20 +172,20 @@ useEffect(()=>{
           <div className="flex flex-wrap justify-center">
           <div className="flex">
           <div className="hover:scale-110">
-              <img src="/works.jpg" alt="Project 1" className="w-1/2 min-h-[20vh] sm:min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
+              <img src="/works.jpg" alt="Project 1" className="w-1/2 min-h-[20vh] sm:min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4 rounded-2xl" />
           <p  className={`flex max-w-[20vw] text-left pl-4 ${isExpanded ? '':'overflow-hidden max-h-[3rem] sm:max-h-[2.9rem]'}`}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo illum, velit soluta facilis eos est distinctio saepe. Repellendus error quasi,
              ad nulla aut minima libero nihil sunt nobis quaerat esse.
              <button onClick={toggleExpand}><IoIosMore/></button>
              </p>
              </div>
           <div className="hover:scale-110"> 
-              <img src="/works.jpg" alt="Project 2" className="w-1/2 min-h-[20vh] sm:min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
+              <img src="/works.jpg" alt="Project 2" className="w-1/2 min-h-[20vh] sm:min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4 rounded-2xl" />
               <p className={`flex max-w-[20vw] text-left pl-4 ${isExpanded ? '':'overflow-hidden max-h-[3rem] sm:max-h-[2.9rem]'}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur explicabo pariatur repellendus
                ipsam velit iste architecto, illo eos. Dicta, esse! Reprehenderit animi, corporis fugit quidem cum labore suscipit ab voluptas.
                <button onClick={toggleExpand}><IoIosMore/></button></p>
           </div>
           <div className="hover:scale-110">
-            <img src="/works.jpg" alt="Project 3" className="w-1/2 min-h-[20vh] sm:min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
+            <img src="/works.jpg" alt="Project 3" className="w-1/2 min-h-[20vh] sm:min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4 rounded-2xl" />
         <p className={`flex max-w-[20vw] text-left pl-4 ${isExpanded ? '':'overflow-hidden max-h-[3rem] sm:max-h-[2.9rem]'}`}>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolore
          mollitia aliquid molestiae eos hic, aspernatur nam nihil porro sint! Tempora ab reiciendis et dolor commodi magni distinctio blanditiis ullam.
          <button><IoIosMore/></button></p>
@@ -202,19 +202,19 @@ useEffect(()=>{
           <div className="flex flex-wrap justify-center">
           <div className="flex">
           <div className="hover:scale-110">
-              <img src="/works.jpg" alt="Project 1" className="w-1/2 min-h-[20vh] sm:min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
+              <img src="/works.jpg" alt="Project 1" className="w-1/2 min-h-[20vh] sm:min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4 rounded-2xl" />
           <p  className={`flex max-w-[20vw] text-left pl-4 ${isExpanded ? '':'overflow-hidden max-h-[3rem] sm:max-h-[2.9rem]'}`}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo illum, velit soluta facilis eos est distinctio saepe. Repellendus error quasi,
              ad nulla aut minima libero nihil sunt nobis quaerat esse.
              <button onClick={toggleExpand}><IoIosMore/></button></p>
              </div>
           <div className="hover:scale-110"> 
-              <img src="/works.jpg" alt="Project 2" className="w-1/2 min-h-[20vh] sm:min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
+              <img src="/works.jpg" alt="Project 2" className="w-1/2 min-h-[20vh] sm:min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4 rounded-2xl" />
               <p className={`flex max-w-[20vw] text-left pl-4 ${isExpanded ? '':'overflow-hidden max-h-[3rem] sm:max-h-[2.9rem]'}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur explicabo pariatur repellendus
                ipsam velit iste architecto, illo eos. Dicta, esse! Reprehenderit animi, corporis fugit quidem cum labore suscipit ab voluptas.
                <button onClick={toggleExpand}><IoIosMore/></button></p>
           </div>
           <div className="hover:scale-110">
-            <img src="/works.jpg" alt="Project 3" className="w-1/2 min-h-[20vh] sm:min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4" />
+            <img src="/works.jpg" alt="Project 3" className="w-1/2 min-h-[20vh] sm:min-h-[40vh] min-w-[20vw] sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/8 h-auto my-4 sm:mx-4 rounded-2xl" />
         <p className={`flex max-w-[20vw] text-left pl-4 ${isExpanded ? '':'overflow-hidden max-h-[3rem] sm:max-h-[2.9rem]'}`}>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolore
          mollitia aliquid molestiae eos hic, aspernatur nam nihil porro sint! Tempora ab reiciendis et dolor commodi magni distinctio blanditiis ullam.
          <button onClick={toggleExpand}><IoIosMore/></button></p>
@@ -228,7 +228,7 @@ useEffect(()=>{
         </section>
       <section id="contact" className="my-8 flex flex-col bg-[#f8f7f1] md:flex-row items-start sm:items-center justify-between gap-4 sm:gap-16 min-h-[60vh] sm:min-h-screen">
         <div className="mr-2 sm:mr-8 max-w-[80vw] sm:max-w-[40vw] ml-2 sm:ml-16"> 
-          <h2 className="border text-purple-700 text-xl sm:text-3xl bg-purple-200 max-w-36 px-3 rounded-xl mx-2">Contact</h2>
+          <h2 className="border text-xl sm:text-5xl rounded-xl font-bold font-sans">CONTACT</h2>
           <p className="text-xl sm:text-5xl">Got a problem to solve?</p>
           <p className=" text-sm sm:text-xl">Get your suit ready and tell me <span className=" text-gray-400">your ideas to develop your dream website</span></p>
         </div>
