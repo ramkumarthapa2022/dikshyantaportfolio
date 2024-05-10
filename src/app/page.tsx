@@ -13,10 +13,10 @@ import { BiFontFamily } from "react-icons/bi";
 export default function Home() {
   const [showNav,setShowNav]=useState(false)
   const [isshowmenu,setshowmenu]=useState(false)
-  const [issmscreen,setsmscreen]=useState(window.innerWidth<=640)
+  const [issmscreen,setsmscreen]=useState(false)
   const [isExpanded,setIsExpanded]=useState(false)
   const toggleExpand=()=>{
-    setIsExpanded(!isExpanded)
+    setIsExpanded((prevExpanded)=>!prevExpanded)
   }
   const closeMenu=()=>{
     setshowmenu(false)
@@ -26,10 +26,12 @@ export default function Home() {
     setshowmenu(!isshowmenu)
     setShowNav(true)
   }
+  const handleResize=()=>{
+    setsmscreen(window.innerWidth<=640)
+  }
   useEffect(()=>{
-    const handleResize=()=>{
-      setsmscreen(window.innerWidth<=640)
-    }
+      setsmscreen(window.innerWidth<=640);
+    
     window.addEventListener('resize',handleResize)
   return ()=>{
     window.removeEventListener('resize',handleResize)
@@ -115,7 +117,7 @@ useEffect(()=>{
             <h2 className="text-5xl font-bold mb-4 font-serif">Hi! I am </h2>
             <h1 className="text-6xl font-bold mb-4 font-playfair">Dikshyanta Lamichhane</h1>
             <p className="text-xl text-grey">
-              Welcome to my portfolio! I'm Dikshyanta, a passionate web developer with expertise in frontend technologies such as React,
+              Welcome to my portfolio! I&apos;m Dikshyanta, a passionate web developer with expertise in frontend technologies such as React,
                and backend technologies like Node.js. I have a keen interest in building
                user-friendly and responsive web applications that provide seamless user experiences. In addition to web development,
                I also enjoy exploring new technologies and learning about software architecture and design patterns.
@@ -145,7 +147,7 @@ useEffect(()=>{
                   <div className="min-w-[50vw] px-8 pt-12 mr-4">
                     <h2 className="text-3xl font-bold mb-12 rounded-xl bg-white max-w-40 pl-2">About Me</h2>
                     <p className="text-lg text-gray-300">
-                      Welcome to my portfolio! I'm Dikshyanta, a passionate web developer with expertise in<span className="text-gray-700"> frontend technologies such as React,
+                      Welcome to my portfolio! I&apos;m Dikshyanta, a passionate web developer with expertise in<span className="text-gray-700"> frontend technologies such as React,
                       and backend technologies like Node.js.</span> I have a keen interest in building user-friendly and responsive web applications that 
                       provide seamless user experiences. In addition to web development,
                       I also enjoy exploring new technologies and learning about software architecture and design patterns.
