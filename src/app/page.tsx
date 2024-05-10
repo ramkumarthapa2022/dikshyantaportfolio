@@ -132,8 +132,10 @@ useEffect(()=>{
         <FaTwitter className="mr-10 sm:mr-5"/>
         <FaLinkedin />
              </div>   
-                <main className="container py-8">
-                <section id="about" className="my-8 flex flex-col items-spacearound bg-[#1B2837] rounded-2xl ">
+             <div className="flex justify-center">
+                <main className="container py-8 flex flex-col">
+                  
+                <section id="about" className="my-8 flex flex-col bg-[#1B2837] rounded-2xl ">
                 <div className="flex flex-col md:flex-row justify-center items-center">
                   
                   <div className="pt-12 ">
@@ -246,8 +248,8 @@ useEffect(()=>{
       </section>
 
 
-
         </main>
+        </div>
         <footer className=" bg-gray-600 py-4 text-center rounded-b-3xl text-white">
           <p>&copy; {new Date().getFullYear()} Dikshyanta. All rights reserved.</p>
         </footer>
