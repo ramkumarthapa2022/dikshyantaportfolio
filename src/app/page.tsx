@@ -113,10 +113,10 @@ useEffect(()=>{
           <div className="md:w-1/2 flex justify-center">
             <img src="/1.jpg" alt="Dikshyanta" className="w-64 h-64 rounded-full" />
           </div>
-          <div className="md:w-1/2 md:pl-8">
+          <div className="md:w-1/2 md:pl-8 text-black">
             <h2 className="text-5xl font-bold mb-4 font-serif">Hi! I am </h2>
             <h1 className="text-6xl font-bold mb-4 font-playfair">Dikshyanta Lamichhane</h1>
-            <p className="text-xl text-grey">
+            <p className="text-xl">
               Welcome to my portfolio! I&apos;m Dikshyanta, a passionate web developer with expertise in frontend technologies such as React,
                and backend technologies like Node.js. I have a keen interest in building
                user-friendly and responsive web applications that provide seamless user experiences. In addition to web development,
