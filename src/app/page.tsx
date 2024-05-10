@@ -9,6 +9,7 @@ import { DiResponsive } from "react-icons/di";
 import { MdExpandMore } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
 import { IoIosMore } from "react-icons/io";
+import { BiFontFamily } from "react-icons/bi";
 export default function Home() {
   const [showNav,setShowNav]=useState(false)
   const [isshowmenu,setshowmenu]=useState(false)
@@ -52,12 +53,12 @@ useEffect(()=>{
 },[scrolled])
   return (
     <div className="bg-white min-h-screen flex flex-col justify-center">
-      <div id="home" className='m-8 bg-[#f8f7f1] rounded-t-xl'>
+      <div id="home" className='m-2 bg-[#f8f7f1] rounded-t-xl'>
         
-      <header className={`sm:sticky items-end top-3 z-50 text-black py-4 rounded-full mx-2 my-4 px-3  ${scrolled ? 'transition-colors duration-1000 ease-in-out sm:bg-black sm:bg-opacity-20':''} ${issmscreen && showNav ? 'h-screen':''}`}>
+      <header className={`sm:sticky items-end top-3 z-50 text-black py-4 rounded-full mx-2 my-4 px-3  ${scrolled ? 'transition-colors duration-1000 ease-in-out sm:bg-[#f8f7f1] ':''} ${issmscreen && showNav ? 'h-screen':''}`}>
             <nav className="container mx-auto flex flex-col md:flex-row mt-4 md:mt-0 md:order-1 md:flex md:items-center justify-between">
                 <div className="flex flex-row justify-between">
-                <div className="text-black hover:underline hover:text-red-200">Logo</div>
+                <div className="text-black hover:underline hover:text-red-200">Dikshyanta Lamichhane</div>
                 {issmscreen && (
                    <div className="sm:hidden">
                    {!isshowmenu ? (
@@ -111,8 +112,9 @@ useEffect(()=>{
             <img src="/1.jpg" alt="Dikshyanta" className="w-64 h-64 rounded-full" />
           </div>
           <div className="md:w-1/2 md:pl-8">
-            <h2 className="text-5xl font-bold mb-4">Introduction</h2>
-            <p className="text-xl">
+            <h2 className="text-5xl font-bold mb-4 font-serif">Hi! I am </h2>
+            <h1 className="text-6xl font-bold mb-4 font-playfair">Dikshyanta Lamichhane</h1>
+            <p className="text-xl text-grey">
               Welcome to my portfolio! I'm Dikshyanta, a passionate web developer with expertise in frontend technologies such as React,
                and backend technologies like Node.js. I have a keen interest in building
                user-friendly and responsive web applications that provide seamless user experiences. In addition to web development,
@@ -131,7 +133,7 @@ useEffect(()=>{
         <FaLinkedin />
              </div>   
                 <main className="container py-8">
-                <section id="about" className="my-8 flex flex-col items-center">
+                <section id="about" className="my-8 flex flex-col items-spacearound bg-[#1B2837] rounded-2xl ">
                 <div className="flex flex-col md:flex-row justify-center items-center">
                   
                   <div className="pt-12 ">
