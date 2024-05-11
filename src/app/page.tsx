@@ -98,10 +98,10 @@ useEffect(()=>{
                         <a href="#about" className="text-black hover:underline hover:text-red-200">About</a>
                     </li>
                     <li className="hidden lg:block">
-                        <a href="#contact" className="text-md border rounded-full px-2 text-black hover:underline hover:text-red-200">Contact</a>
+                        <a href="#contact" className="text-md rounded-full px-2 text-black hover:underline hover:text-red-200">Contact</a>
                     </li>
                     <li className="hidden lg:block">
-                        <a href="#contact" className="text-md border bg-green-800 rounded-md px-3 py-4 ml-8 text-white hover:underline hover:text-red-200">Download CV</a>
+                        <a href="#contact" className="text-md border border-blue-600 rounded-full px-2 py-2 ml-8 text-black hover:bg-blue-300 ">Download CV</a>
                     </li>
                 </ul>
             </nav>
@@ -122,22 +122,31 @@ useEffect(()=>{
                user-friendly and responsive web applications that provide seamless user experiences. In addition to web development,
                I also enjoy exploring new technologies and learning about software architecture and design patterns.
             </p>
-            <button onClick={handleSendMessage} className="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-blue-800 mr-10">Say Hello</button>
-            <button  className="bg-blue-800 text-white px-4 py-2 mt-4 rounded hover:bg-blue-500">See Services</button>
+            <button onClick={handleSendMessage} className=" text-black border border-black font-bold px-4 py-2 mt-4 rounded-full hover:bg-blue-300 mr-10">Say Hello</button>
+            <button  className=" text-black border border-black font-bold px-4 py-2 mt-4 rounded-full hover:bg-blue-300">See Services</button>
           
           </div>
 
         </div>
         <div className="flex flex-row ml-14 sm:ml-28 text-3xl">
-        <FaFacebook className="mr-10 sm:mr-5"/>
-        <FaInstagram className="mr-10 sm:mr-5"/>
-        <FaTwitter className="mr-10 sm:mr-5"/>
-        <FaLinkedin />
+          <a href="https://www.facebook.com/dikshyanta.lamichhane.94">
+            <FaFacebook className="mr-10 sm:mr-5" />
+          </a>
+          <a href="https://www.instagram.com/uy_sagittarius_a?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+          <FaInstagram className="mr-10 sm:mr-5" />
+          </a>
+          <a href="https://twitter.com/DikshyantaLami3">
+          <FaTwitter className="mr-10 sm:mr-5" />
+          </a>
+          <a href="#">
+          <FaLinkedin className="mr-10 sm:mr-5" />
+          </a>
+        
              </div>   
              <div className="flex justify-center">
                 <main className="container py-8 flex flex-col">
                   
-                <section id="about" className="my-8 flex flex-col bg-[#1B2837] rounded-2xl ">
+                <section id="about" className="my-8 flex flex-col bg-[#707071] rounded-xl ">
                 <div className="flex flex-col md:flex-row justify-center items-center">
                   
                   <div className="pt-12 ">
