@@ -109,11 +109,11 @@ useEffect(()=>{
 
 
 
-        <div className="container mx-auto my-20 flex flex-col md:flex-row items-center justify-center py-10 px-10">
+        <div className="container my-20 p-10 flex flex-col w-full md:flex-row items-center bg-cover justify-center bg-[url('/peakpx.jpg')]">
           <div className="md:w-1/2 flex justify-center">
             <img src="/1.jpg" alt="Dikshyanta" className="w-64 h-64 rounded-full" />
           </div>
-          <div className="md:w-1/2 md:pl-8 text-black">
+          <div className="md:w-1/2 md:pl-8 text-white ">
             <h2 className="text-5xl font-bold mb-4 font-serif">Hi! I am </h2>
             <h1 className="text-6xl font-bold mb-4 font-playfair">Dikshyanta Lamichhane</h1>
             <p className="text-xl">
@@ -122,8 +122,8 @@ useEffect(()=>{
                user-friendly and responsive web applications that provide seamless user experiences. In addition to web development,
                I also enjoy exploring new technologies and learning about software architecture and design patterns.
             </p>
-            <button onClick={handleSendMessage} className=" text-black border border-black font-bold px-4 py-2 mt-4 rounded-full hover:bg-blue-300 mr-10">Say Hello</button>
-            <button  className=" text-black border border-black font-bold px-4 py-2 mt-4 rounded-full hover:bg-blue-300">See Services</button>
+            <button onClick={handleSendMessage} className=" text-white border border-white font-bold px-4 py-2 mt-4 rounded-full hover:bg-blue-300 mr-10">Say Hello</button>
+            <button  className=" text-white border border-white font-bold px-4 py-2 mt-4 rounded-full hover:bg-blue-300">See Services</button>
           
           </div>
 
@@ -146,7 +146,7 @@ useEffect(()=>{
              <div className="flex justify-center">
                 <main className="container py-8 flex flex-col">
                   
-                <section id="about" className="my-8 flex flex-col bg-[#707071] rounded-xl ">
+                <section id="about" className="my-8 h-90 p-10 flex flex-col bg-[#707071] rounded-xl ">
                 <div className="flex flex-col md:flex-row justify-center items-center">
                   
                   <div className="pt-12 ">
