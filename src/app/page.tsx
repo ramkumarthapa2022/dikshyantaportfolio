@@ -5,6 +5,7 @@ import Skills from "@/components/skills";
 import Blogs from "@/components/blogs";
 import Contact from "@/components/contact";
 import Footer from "@/components/Footer";
+import Projects from "@/components/projects";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
               <main className="container py-8 flex flex-col">
                   <About/>
                   <Skills/>
+                  <Projects/>
                   <Blogs/>
                   <Contact/>
               </main>
