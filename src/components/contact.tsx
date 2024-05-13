@@ -3,9 +3,9 @@ import { CiMail } from 'react-icons/ci'
 
 const Contact = () => {
   return (
-    <section id="contact" className="my-8 flex flex-col bg-[#f8f7f1] md:flex-row items-start sm:items-center justify-between gap-4 sm:gap-16 min-h-[60vh] sm:min-h-screen">
+    <section id="contact" className="my-8 flex flex-col bg-[#f8f7f1 md:flex-row items-start sm:items-center justify-between gap-4 sm:gap-16 min-h-[60vh] sm:min-h-screen">
         <div className="mr-2 sm:mr-8 max-w-[80vw] sm:max-w-[40vw] ml-2 sm:ml-16"> 
-          <h2 className="border text-xl sm:text-5xl rounded-xl font-bold font-sans">CONTACT</h2>
+          <h2 className="border text-5xl sm:text-5xl rounded-xl font-bold font-sans">CONTACT</h2>
           <p className="text-xl sm:text-5xl">Got a problem to solve?</p>
           <p className=" text-sm sm:text-xl">Get your suit ready and tell me <span className=" text-gray-400">your ideas to develop your dream website</span></p>
         </div>

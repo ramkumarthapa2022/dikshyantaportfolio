@@ -32,10 +32,10 @@ const Header = () => {
         window.open('https://www.facebook.com/messages/t/100065000725712', '_blank','noopener,noreferrer');
       };
   return (
-    <><header className={`sm:sticky items-end top-3 z-50 text-black py-4 rounded-full mx-2 my-4 px-3  ${scrolled ? 'transition-colors duration-1000 ease-in-out sm:bg-[#f8f7f1] ' : ''} ${issmscreen && showNav ? 'h-screen' : ''}`}>
+    <><header className={`sm:sticky items-end top-3 z-50 text-blac py-4 rounded-full mx-2 my-4 px-3  ${scrolled ? 'transition-colors duration-1000 ease-in-out sm:bg-[#f8f7f1 ' : ''} ${issmscreen && showNav ? 'h-screen' : ''}`}>
           <nav className="container mx-auto flex flex-col md:flex-row mt-4 md:mt-0 md:order-1 md:flex md:items-center justify-between">
               <div className="flex flex-row justify-between">
-                  <div className="text-black hover:underline hover:text-red-200">Dikshyanta Lamichhane</div>
+                  <div className="text-blac hover:underline hover:text-red-200">Dikshyanta Lamichhane</div>
                   {issmscreen && (
                       <div className="sm:hidden">
                           {!isshowmenu ? (
@@ -57,25 +57,25 @@ const Header = () => {
 
               <ul className={`sm:flex flex-col md:flex-row md:space-x-16 ${showNav || !issmscreen ? '' : 'hidden'}`}>
                   <li>
-                      <a href="#home" className="text-green-800 hover:underline  hover:text-red-200">Home</a>
+                      <a href="#home" className="text-gree-800 hover:underline  hover:text-red-200">Home</a>
                   </li>
                   <li>
-                      <a href="#skills" className="text-black hover:underline hover:text-red-200">Skills</a>
+                      <a href="#skills" className="text-blac hover:underline hover:text-red-200">Skills</a>
                   </li>
                   <li>
-                      <a href="#myprojects" className="text-black hover:underline hover:text-red-200">Projects</a>
+                      <a href="#myprojects" className="text-blac hover:underline hover:text-red-200">Projects</a>
                   </li>
                   <li>
-                      <a href="#blogs" className="text-black hover:underline hover:text-red-200">Blog</a>
+                      <a href="#blogs" className="text-blac hover:underline hover:text-red-200">Blog</a>
                   </li>
                   <li>
-                      <a href="#about" className="text-black hover:underline hover:text-red-200">About</a>
+                      <a href="#about" className="text-blac hover:underline hover:text-red-200">About</a>
                   </li>
                   <li className="hidden lg:block">
-                      <a href="#contact" className="text-md rounded-full px-2 text-black hover:underline hover:text-red-200">Contact</a>
+                      <a href="#contact" className="text-md rounded-full px-2 text-blac hover:underline hover:text-red-200">Contact</a>
                   </li>
                   <li className="hidden lg:block">
-                      <a href="#contact" className="text-md border border-blue-600 rounded-full px-2 py-2 ml-8 text-black hover:bg-blue-300 ">Download CV</a>
+                      <a href="#contact" className="text-md border border-blue-600 rounded-full px-2 py-2 ml-8 text-blac hover:bg-blue-300 ">Download CV</a>
                   </li>
               </ul>
           </nav>
