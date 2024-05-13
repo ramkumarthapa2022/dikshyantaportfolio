@@ -6,7 +6,7 @@ import {FaFacebook, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa";
 const Header = () => {
     const [showNav,setShowNav]=useState(false)
     const [isshowmenu,setshowmenu]=useState(false)
-    const [issmscreen,setsmscreen]=useState(false)
+    const [issmscreen]=useState(false)
     const closeMenu=()=>{
         setshowmenu(false)
         setShowNav(false)
@@ -80,7 +80,7 @@ const Header = () => {
               </ul>
           </nav>
       </header>
-      <div className="container my-20 p-10 flex flex-col w-full md:flex-row items-center bg-cover justify-center bg-[url('/peakpx.jpg')]">
+      <div className="my-20 p-10 flex flex-col md:flex-row items-center w-screen bg-cover justify-center bg-[url('/peakpx.jpg')]">
           <div className="md:w-1/2 flex justify-center">
               <img src="/1.jpg" alt="Dikshyanta" className="w-64 h-64 rounded-full" />
           </div>
