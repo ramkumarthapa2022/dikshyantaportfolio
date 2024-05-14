@@ -37,10 +37,11 @@ export default function Home() {
         <Header/>
           <div className="flex justify-center">
               <main className="container py-8 flex flex-col">
-                  <About/>
+                  
                   <Skills/>
                   <Projects/>
                   <Blogs/>
+                  <About/>
                   <Contact/>
               </main>
           </div>

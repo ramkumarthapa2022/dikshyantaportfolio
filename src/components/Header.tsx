@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { CiMenuBurger } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
-import {FaFacebook, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa";
+import {FaArrowAltCircleRight, FaChartBar, FaEnvelope, FaFacebook, FaFolderOpen, FaHome, FaInstagram, FaLinkedin, FaNewspaper, FaOpencart, FaPhone, FaTwitter, FaUser} from "react-icons/fa";
+import { FaHand } from 'react-icons/fa6';
+
 
 const Header = () => {
     const [showNav,setShowNav]=useState(false)
@@ -32,10 +34,11 @@ const Header = () => {
         window.open('https://www.facebook.com/messages/t/100065000725712', '_blank','noopener,noreferrer');
       };
   return (
-    <><header className={`sm:sticky items-end top-3 z-50 text-blac py-4 rounded-full mx-2 my-4 px-3  ${scrolled ? 'transition-colors duration-1000 ease-in-out sm:bg-[#f8f7f1 ' : ''} ${issmscreen && showNav ? 'h-screen' : ''}`}>
+    <><main className=" rounded">
+        <header className={`sm:sticky items-end top-3 z-50 py-4 mx-2 px-3  ${scrolled ? 'transition-colors duration-1000 ease-in-out ' : ''} ${issmscreen && showNav ? 'h-screen' : ''}`}>
           <nav className="container mx-auto flex flex-col md:flex-row mt-4 md:mt-0 md:order-1 md:flex md:items-center justify-between">
               <div className="flex flex-row justify-between">
-                  <div className="text-blac hover:underline hover:text-red-200">Dikshyanta Lamichhane</div>
+                  <div className="font-bold hover:underline hover:text-red-200">Dikshyanta Lamichhane</div>
                   {issmscreen && (
                       <div className="sm:hidden">
                           {!isshowmenu ? (
@@ -55,50 +58,63 @@ const Header = () => {
                   )}
               </div>
 
-              <ul className={`sm:flex flex-col md:flex-row md:space-x-16 ${showNav || !issmscreen ? '' : 'hidden'}`}>
+              <ul className={` sm:flex flex-col  md:flex-row md:space-x-10 ${showNav || !issmscreen ? '' : 'hidden'}`}>
                   <li>
-                      <a href="#home" className="text-gree-800 hover:underline  hover:text-red-200">Home</a>
-                  </li>
-                  <li>
-                      <a href="#skills" className="text-blac hover:underline hover:text-red-200">Skills</a>
-                  </li>
-                  <li>
-                      <a href="#myprojects" className="text-blac hover:underline hover:text-red-200">Projects</a>
+                    
+                    <a href="#home" className="hover:underline  hover:text-red-200 ">
+                    <FaHome className="lg:hidden"/><p className='hidden lg:block'>Home</p></a>
                   </li>
                   <li>
-                      <a href="#blogs" className="text-blac hover:underline hover:text-red-200">Blog</a>
+                  
+                  <a href="#skills" className="hover:underline hover:text-red-200"><FaChartBar className="lg:hidden"/><p className='hidden lg:block'>Skills</p></a>
                   </li>
                   <li>
-                      <a href="#about" className="text-blac hover:underline hover:text-red-200">About</a>
+                  
+                  <a href="#myprojects" className="hover:underline hover:text-red-200"><FaFolderOpen className="lg:hidden"/><p className='hidden lg:block'>Projects</p></a>
                   </li>
-                  <li className="hidden lg:block">
-                      <a href="#contact" className="text-md rounded-full px-2 text-blac hover:underline hover:text-red-200">Contact</a>
+                  <li>
+                  
+                  <a href="#blogs" className="hover:underline hover:text-red-200"><FaNewspaper className="lg:hidden"/><p className='hidden lg:block'>Blog</p></a>
                   </li>
-                  <li className="hidden lg:block">
-                      <a href="#contact" className="text-md border border-blue-600 rounded-full px-2 py-2 ml-8 text-blac hover:bg-blue-300 ">Download CV</a>
+                  <li>
+                  
+                  <a href="#about" className="hover:underline hover:text-red-200"><FaUser className="lg:hidden"/><p className='hidden lg:block'>About</p></a>
+                  </li>
+                  <li>
+                      <a href="#contact" className="hover:underline hover:text-red-200"><FaEnvelope className="lg:hidden"/><p className='hidden lg:block'>Contact</p></a>
                   </li>
               </ul>
           </nav>
       </header>
-      <div className="my-20 p-10 flex flex-col md:flex-row items-center w-screen bg-cover justify-center bg-[url('/peakpx.jpg')]">
+      <div className="p-10 flex flex-col md:flex-row items-center w-screen bg-cover justify-center ">
           <div className="md:w-1/2 flex justify-center">
               <img src="/1.jpg" alt="Dikshyanta" className="w-64 h-64 rounded-full" />
           </div>
-          <div className="md:w-1/2 md:pl-8 text-white ">
+          <div className="md:w-1/2 md:pl-8">
               <h2 className="text-5xl font-bold mb-4 font-serif">Hi! I am </h2>
               <h1 className="text-6xl font-bold mb-4 font-playfair">Dikshyanta Lamichhane</h1>
               <p className="text-xl">
                   Welcome to my portfolio! I&apos;m Dikshyanta, a passionate web developer with expertise in frontend technologies such as React,
-                  and backend technologies like Node.js. I have a keen interest in building
-                  user-friendly and responsive web applications that provide seamless user experiences. In addition to web development,
-                  I also enjoy exploring new technologies and learning about software architecture and design patterns.
+                  and backend technologies like Node.js.
               </p>
-              <button onClick={handleSendMessage} className=" text-white border border-white font-bold px-4 py-2 mt-4 rounded-full hover:bg-blue-300 mr-10">Say Hello</button>
-              <button className=" text-white border border-white font-bold px-4 py-2 mt-4 rounded-full hover:bg-blue-300">See Services</button>
+              <div className="flex items-center space-x-4">
 
+                <button onClick={handleSendMessage} className="border border-black font-bold px-4 py-2 rounded-full hover:bg-blue-300">
+                    <span className="flex items-center">
+                        Say Hello <FaHand className="ml-2" />
+                    </span>
+                </button>
+
+                <button className="border border-black font-bold px-4 py-2 rounded-full hover:bg-blue-300">
+                    <span className="flex items-center">
+                        See Services <FaArrowAltCircleRight className="ml-2" />
+                    </span>
+                </button>
+        </div>
           </div>
 
-      </div><div className="flex flex-row ml-14 sm:ml-28 text-3xl">
+      </div>
+      <div className="flex flex-row  ml-14 sm:ml-28 text-3xl">
                   <a href="https://www.facebook.com/dikshyanta.lamichhane.94">
                       <FaFacebook className="mr-10 sm:mr-5" />
                   </a>
@@ -112,7 +128,9 @@ const Header = () => {
                       <FaLinkedin className="mr-10 sm:mr-5" />
                   </a>
 
-              </div></>
+              </div>
+              </main>
+              </>
   )
 }
 
