@@ -33,7 +33,7 @@ export default function Home() {
   return (
 
     <div className={`min-h-screen flex flex-col justify-center` } >
-      <div id="home" className={`m-2  rounded-t-xl`}>
+      <div id="home" className={` mx-9  rounded-t-xl`}>
         <Header/>
           <div className="flex justify-center">
               <main className="container py-8 flex flex-col">

@@ -36,9 +36,9 @@ const Header = () => {
   return (
     <><main className=" rounded">
         <header className={`sm:sticky items-end top-3 z-50 py-4 mx-2 px-3  ${scrolled ? 'transition-colors duration-1000 ease-in-out ' : ''} ${issmscreen && showNav ? 'h-screen' : ''}`}>
-          <nav className="container mx-auto flex flex-col md:flex-row mt-4 md:mt-0 md:order-1 md:flex md:items-center justify-between">
+          <nav className="container mx-auto flex flex-col md:flex-row mt-4 md:mt-0 md:order-1 md:flex md:items-center justify-between m-[0_0_100px_0]">
               <div className="flex flex-row justify-between">
-                  <div className="font-bold font-sora hover:underline hover:text-red-200">DIKSHYANTA LAMICHHANE</div>
+                  <div className="font-bold font-sora text-[23px] hover:underline hover:text-red-200">DIKSHYANTA LAMICHHANE</div>
                   {issmscreen && (
                       <div className="sm:hidden">
                           {!isshowmenu ? (
@@ -86,9 +86,9 @@ const Header = () => {
               </ul>
           </nav>
       </header>
-      <div className="p-10 flex flex-col md:flex-row items-center w-screen bg-cover justify-center ">
+      <div className="p-10 flex flex-col md:flex-row items-center bg-cover justify-center ">
           <div className="md:w-1/2 flex justify-center">
-              <img src="/public/1.jpg" alt="Dikshyanta" className="w-64 h-64 rounded-full" />
+              <img src="/1.jpg" alt="Dikshyanta" className="w-64 h-64 rounded-full shadow-slate-800" />
           </div>
           <div className="md:w-1/2 md:pl-8">
               <h2 className="text-5xl font-bold mb-4 font-serif">Hi! I am </h2>
