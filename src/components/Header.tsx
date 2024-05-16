@@ -90,7 +90,7 @@ const Header = () => {
       <div className="p-10 flex flex-col md:flex-row items-center bg-cover justify-center ">
           <div className="md:w-1/2 flex justify-center">
               {/* <img src="/1.jpg" alt="Dikshyanta" className="w-64 h-64 rounded-full shadow-slate-800" /> */}
-              <Image src={'https://github.com/ramkumarthapa2022/dikshyantaportfolio/blob/main/public/1.jpg'} alt={'picture1'}/>
+              <Image src={'/1.jpg'} alt={'picture1'} width={300} height={150} className='rounded-full shadow-slate-800'/>
           </div>
           <div className="md:w-1/2 md:pl-8">
               <h2 className="text-5xl font-bold mb-4 font-serif">Hi! I am </h2>
