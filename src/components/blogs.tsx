@@ -8,7 +8,7 @@ const Blogs = () => {
     setIsExpanded((prevExpanded)=>!prevExpanded)
   }
   return (
-    <section id="blogs" className="my-20 flex flex-col items-center min-h-[70vh]">
+    <section id="blogs" className="my-20 flex flex-col items-center min-h-[70vh] text-black">
           <h2 className="text-3xl font-bold mb-16">BLOGS</h2>
           <div className="flex flex-wrap justify-center">
           <div className="flex mx-5">
