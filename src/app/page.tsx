@@ -7,6 +7,7 @@ import Contact from "@/components/contact";
 import Footer from "@/components/Footer";
 import Projects from "@/components/projects";
 import { useEffect, useState } from "react";
+import Services from "@/components/Services";
 
 export default function Home() {
   const [backgroundColor, setBackgroundColor] = useState('white'); // Default to light mode
@@ -32,12 +33,12 @@ export default function Home() {
   // }, []);
   return (
 
-    <div className={`min-h-screen flex flex-col justify-center` } >
-      <div id="home" className={` mx-9  rounded-t-xl`}>
+    <div className={`min-h-screen flex flex-col justify-center bg-[#CDE8E5]` } >
+      <div id="home" className={`rounded-t-xl`}>
         <Header/>
           <div className="flex justify-center">
               <main className="container py-8 flex flex-col">
-                  
+                  <Services/>
                   <Skills/>
                   <Projects/>
                   <Blogs/>
